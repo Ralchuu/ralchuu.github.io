@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- kuvaus sivun sisällöstä-->
+     <meta name="description" content = "Portrait photography portfolio">
+     <meta name="keywords" content = "portrait photography helsinki, pet photography helsinki, valokuvaaja helsinki, pet photography espoo,
+      valokuvaus espoo, valokuvaaja espoo, omakuva espoo, omakuva helsinki, lemmikkikuvaus espoo, lemmikkikuvaus helsinki, portrait photography espoo">
+     <meta name="author" content = "Rauli Saresoja"> 
+    <title>Portrait photography portfolio RS</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/tyylit.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+    <body>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+            }
+
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
+        <header>
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="index.html" class="active"><img src="../kuvat/RS3.png"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                <a href="aboutme.html">About me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html">Back home</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </header>
+
+        <h1>Digital portfolio</h1>
+        <h2>About me</h2>
+        <p>Hello, nice to see you here. I'm Rauli, an amateur photographer from Espoo.
+           I've been interested in capturing moments since early age. I plan on more serious after i get to upgrade my equipment.
+           I'm currently using Canon EOS D700 with Canon EF 50mm f/1.8 STM pancake lens. In case you were wondering: yes, i'm the cat in the image below.
+        </p>
+        <br>
+        <img src="../kuvat/me.jpeg"
+            width="100%" 
+            height="100%"
+            class="center"/>
+            
+        <br>
+        <footer>
+        <hr>
+      <b>Contact:</b> <br/>
+      040 4666 XXX <br/>
+      rauli-business@gmail.com <br/>
+      <b>Social media:</b> <br/>
+      <!-- Add font icons -->
+      <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+      <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+
+    </footer>
+</body>
+</html>
