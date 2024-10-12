@@ -204,7 +204,7 @@ p { text-align:justify;
   
   /* Style the active link (or home/logo) */
   .active {
-    background: url('../kuvat/marble.png') no-repeat top center ;
+    background: url('../kuvat/marble.jpg') no-repeat top center ;
     color: white;
   }
 
