@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- kuvaus sivun sisällöstä-->
-     <meta name="description" content = "Portrait photography portfolio">
-     <meta name="keywords" content = "portrait photography helsinki, pet photography helsinki, valokuvaaja helsinki, pet photography espoo,
+    <!-- Description of the page content -->
+    <meta name="description" content="Portrait photography portfolio">
+    <meta name="keywords" content="portrait photography helsinki, pet photography helsinki, valokuvaaja helsinki, pet photography espoo,
       valokuvaus espoo, valokuvaaja espoo, omakuva espoo, omakuva helsinki, lemmikkikuvaus espoo, lemmikkikuvaus helsinki, portrait photography espoo">
-     <meta name="author" content = "Rauli Saresoja"> 
+    <meta name="author" content="Rauli Saresoja"> 
     <title>Portrait photography portfolio RS</title>
 
     <link rel="stylesheet" type="text/css" href="../css/tyylit.css">
@@ -15,121 +15,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-    <body>
-        <script>
-            function myFunction() {
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
-            x.style.display = "none";
+                x.style.display = "none";
             } else {
-            x.style.display = "block";
+                x.style.display = "block";
             }
-            }
+        }
 
-            // Get the button:
-            let mybutton = document.getElementById("myBtn");
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
 
-            function scrollFunction() {
+        function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
+                mybutton.style.display = "block";
             } else {
-            mybutton.style.display = "none";
+                mybutton.style.display = "none";
             }
-            }
+        }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-        </script>
+        }
+    </script>
 
-        <header>
-            <!-- Top Navigation Menu -->
-            <div class="topnav">
-                <a href="index.html" class="active"><img src="../kuvat/RS3.png"></a>
-                <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
+    <header>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html" class="active"><img src="../kuvat/RS3.png" alt="RS Logo"></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
                 <a href="aboutme.html">About me</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </a>
-         </header>
+        </div>
+    </header>
 
-        <h1>Digital portfolio</h1>
-        <h2>Rauli Saresoja</h2>
-        <p>Welcome to my portfolio website! Here, I plan to share some of my work.
-           The current placeholder images were created with Lummi.ai. Please visit the 'About Me' section to learn more about me!</p>
+    <h1>Digital portfolio</h1>
+    <h2>Rauli Saresoja</h2>
+    <p>Welcome to my portfolio website! Here, I plan to share some of my work.
+       The current placeholder images were created with Lummi.ai. Please visit the 'About Me' section to learn more about me!</p>
 
-        <hr> <!--vertical line-->
+    <hr> <!-- Horizontal line -->
 
-        <div class="row"> 
+    <div class="row"> 
         <div class="column">
-          <img id="portrait15" src="../kuvat/portrait15.png" alt="indoors portrait of a girl and a black cat">
-          <img id="portrait2" src="../kuvat/portrait2.png" alt="outdoors portrait of a man and a camel">
-          <img id="portrait3" src="../kuvat/portrait3.png" alt="close up portrait photo of a caucasian woman">
-          <img id="portrait4" src="../kuvat/portrait4.png" alt="photo of a woman wearing a straw hat at beach">
-          <img id="portrait15" src="../kuvat/portrait15.png" alt="indoors portrait of a girl and a black cat">
-          <img id="portrait16" src="../kuvat/portrait16.png" alt="futuristic photo of a person, large concrete structure and moon">
+            <img id="portrait15a" src="../kuvat/portrait15.png" alt="indoors portrait of a girl and a black cat">
+            <img id="portrait2a" src="../kuvat/portrait2.png" alt="outdoors portrait of a man and a camel">
+            <img id="portrait3a" src="../kuvat/portrait3.png" alt="close up portrait photo of a caucasian woman">
+            <img id="portrait4a" src="../kuvat/portrait4.png" alt="photo of a woman wearing a straw hat at the beach">
         </div>
         <div class="column">
-          <img id="portrait5" src="../kuvat/portrait5.png">
-          <img id="portrait6" src="../kuvat/portrait6.png">
-          <img id="portrait7" src="../kuvat/portrait7.png">
-          <img id="portrait8" src="../kuvat/portrait8.png">
-          <img id="portrait1" src="../kuvat/portrait1.png">
-          <img id="portrait2" src="../kuvat/portrait2.png">
+            <img id="portrait5" src="../kuvat/portrait5.png" alt="portrait 5 description">
+            <img id="portrait6" src="../kuvat/portrait6.png" alt="portrait 6 description">
+            <img id="portrait7" src="../kuvat/portrait7.png" alt="portrait 7 description">
+            <img id="portrait8" src="../kuvat/portrait8.png" alt="portrait 8 description">
         </div>  
         <div class="column">
-          <img src="../kuvat/portrait9.png">
-          <img src="../kuvat/portrait10.png">
-          <img src="../kuvat/portrait11.png">
-          <img src="../kuvat/portrait12.png">
-          <img src="../kuvat/portrait3.png">
-          <img src="../kuvat/portrait4.png">
+            <img src="../kuvat/portrait9.png" alt="portrait 9 description">
+            <img src="../kuvat/portrait10.png" alt="portrait 10 description">
+            <img src="../kuvat/portrait11.png" alt="portrait 11 description">
+            <img src="../kuvat/portrait12.png" alt="portrait 12 description">
         </div>
         <div class="column">
-          <img src="../kuvat/portrait13.png">
-          <img src="../kuvat/portrait14.png">
-          <img src="../kuvat/portrait15.png">
-          <img src="../kuvat/portrait16.png">
-          <img src="../kuvat/portrait5.png">
-          <img src="../kuvat/portrait6.png">
-          <img src="../kuvat/portrait8.png">
+            <img src="../kuvat/portrait13.png" alt="portrait 13 description">
+            <img src="../kuvat/portrait14.png" alt="portrait 14 description">
+            <img src="../kuvat/portrait15.png" alt="portrait 15 description">
+            <img src="../kuvat/portrait16.png" alt="portrait 16 description">
         </div>
-      </div>
+    </div>
 
     <footer>
         <hr>
-      <b>Contact:</b> <br/>
-      040 4666 XXX <br/>
-      rauli-business@gmail.com <br/>
-      <b>Social media:</b> <br/>
-      <!-- Add font icons -->
-      <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-      <a href="https://www.youtube.com" class="fa fa-youtube"></a>
-
+        <b>Contact:</b>
+        <br>
+        040 4666 XXX 
+        <br>
+        rauli-business@gmail.com
+        <br>
+        <b>Social media:</b>
+        <br>
+        <!-- Add social media icons -->
+        <a href="https://www.instagram.com" class="fa fa-instagram" aria-label="Instagram"></a>
+        <a href="https://www.youtube.com" class="fa fa-youtube" aria-label="YouTube"></a>
     </footer>
 </body>
 </html>
