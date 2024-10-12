@@ -1,192 +1,214 @@
-/* Style inputs and text areas */
-input[type=email], 
-input[type=text], 
-select, 
-textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Ensure padding and width stay in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow vertical resize only */
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #7b7f7d; /* Background color */
-    color: white; /* Text color */
-    padding: 12px 20px; /* Padding */
-    border: none; /* Remove borders */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+  background-color: #7b7f7d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* Submit button hover effect */
+/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049; /* Darker background on hover */
+  background-color: #45a049;
 }
 
-/* Container style */
+/* Add a background color and some padding around the form */
 .container {
-    border-radius: 5px; /* Rounded borders */
-    background-color: #f2f2f2; /* Background color */
-    padding: 20px; /* Padding */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-/* Center alignment */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
-/* Back to top button style */
 #myBtn {
     display: none; /* Hidden by default */
-    position: fixed; /* Fixed position */
-    bottom: 20px; /* Position from the bottom */
-    right: 30px; /* Position from the right */
-    z-index: 99; /* Ensure it doesn't overlap */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(113, 110, 110); /* Background color */
+    background-color: rgb(113, 110, 110); /* Set a background color */
     color: white; /* Text color */
-    cursor: pointer; /* Pointer cursor on hover */
-    padding: 15px; /* Padding */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
-}
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 
-/* Back to top button hover effect */
-#myBtn:hover {
-    background-color: #555; /* Dark grey background on hover */
-}
-
-/* Flexbox layout for image columns */
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-}
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    max-height: 800px; /* Adjust as needed to prevent overly tall images */
+    object-fit: cover; /* Ensures the image retains its aspect ratio */
 
-/* Equal columns for images */
-.column {
-    flex: 24%; /* Flex property for four columns */
-    max-width: 24%; /* Maximum width for columns */
-    padding: 0 4px; /* Padding for columns */
-}
-
-.column img {
-    margin-top: 8px; /* Top margin for images */
-    vertical-align: middle; /* Vertical alignment */
-    width: 100%; /* Full width */
-    max-height: 800px; /* Max height to prevent tall images */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-/* Responsive layouts */
-@media screen and (max-width: 900px) {
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
     .column {
-        flex: 48%; /* Two columns */
-        max-width: 48%;
+      flex: 48%;
+      max-width: 48%;
     }
-}
-
-@media screen and (max-width: 600px) {
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
     .column {
-        flex: 96%; /* Stack columns */
-        max-width: 96%;
+      flex: 96%;
+      max-width: 96%;
     }
-}
+  }
 
-/* Header style */
 header {
-    font-family: "Dancing Script"; /* Font style */
-}
+    font-family: "Dancing Script";
+      
+} 
 
-/* Footer style */
 footer {
-    font-family: "Montserrat"; /* Font style */
-    font-size: large; /* Font size */
-    background-color: #e7e7e7; /* Background color */
-    text-align: center; /* Center text */
-}
-
-/* Font Awesome icons style */
+    font-family: "Montserrat";
+    font-size: large;
+    background-color: #e7e7e7;
+    text-align:center;
+    /* Style all font awesome icons */
+    
 .fa {
-    padding: 20px; /* Padding */
-    font-size: 20px; /* Font size */
-    width: 20px; /* Width */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-instagram {
+    background: #0b0b0b;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  /* Twitter */
+  .fa-youtube {
+    background: #191919;
+    color: white;
+    border-radius: 50%;
+  }
 }
 
-/* Font Awesome icons hover effect */
-.fa:hover {
-    opacity: 0.7; /* Slight transparency on hover */
+h1 { text-align:center;
+    font-family: "Dancing Script";
+}
+h2 { text-align:center;
+    font-family: "Dancing Script";
+}
+p { text-align:justify;
+  width: 80%;margin:auto;
 }
 
-/* Social media icon colors */
-.fa-instagram {
-    background: #0b0b0b; /* Instagram background */
-    color: white; /* Text color */
-    border-radius: 50%; /* Rounded icons */
-}
-
-.fa-youtube {
-    background: #191919; /* YouTube background */
-    color: white; /* Text color */
-    border-radius: 50%; /* Rounded icons */
-}
-
-/* Headings styling */
-h1, h2 {
-    text-align: center; /* Center text */
-    font-family: "Dancing Script"; /* Font style */
-}
-
-p {
-    text-align: justify; /* Justify text */
-    width: 80%; /* Width of paragraph */
-    margin: auto; /* Center paragraph */
-}
-
-/* Navigation menu style */
+/* Style the navigation menu */
 .topnav {
-    overflow: hidden; /* Hide overflow */
-    background-color: #333; /* Background color */
-    position: relative; /* Relative position */
-}
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
 
-.topnav #myLinks {
-    display: none; /* Hide links initially */
-}
+  .topnav a {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #5a5a5a;
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background: url('../kuvat/marble.png') no-repeat top center ;
+    color: white;
+  }
 
-.topnav a {
-    text-align: center; /* Center text */
-    position: relative; /* Relative position */
-    display: inline-block; /* Inline block display */
-    color: white; /* Text color */
-    padding: 14px 16px; /* Padding */
-    text-decoration: none; /* Remove underline */
-    font-size: 17px; /* Font size */
-}
-
-/* Hamburger menu style */
-.topnav a.icon {
-    background: rgb(0, 0, 0); /* Hamburger menu background */
-    display: block; /* Block display */
-}
-
-/* Navigation menu hover effect */
-.topnav a:hover {
-    background-color: #5a5a5a; /* Background on hover */
-    color: white; /* Text color on hover */
-}
-
-/* Active link style */
-.active {
-    background: url('../kuvat/marble.png') no-repeat top center; /* Active ba
+body {
+    font-family: "Montserrat";
+    background-color:rgb(234, 237, 235);
+} 
