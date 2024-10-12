@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description of the page content -->
     <meta name="description" content="Portrait photography portfolio">
     <meta name="keywords" content="portrait photography helsinki, pet photography helsinki, valokuvaaja helsinki, pet photography espoo, valokuvaus espoo, valokuvaaja espoo, omakuva espoo, omakuva helsinki, lemmikkikuvaus espoo, lemmikkikuvaus helsinki, portrait photography espoo">
     <meta name="author" content="Rauli Saresoja"> 
@@ -14,36 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        img {
-            max-width: 100%; /* Ensures images are responsive */
-            height: auto; /* Maintains aspect ratio */
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-            justify-content: space-between; /* Prevents layout shifts by ensuring even spacing */
-        }
-
-        .column {
-            flex: 24%;
-            max-width: 24%;
-            padding: 0 4px;
-            box-sizing: border-box; /* Ensure padding is included in width */
-        }
-
-        /* Example of fixed aspect ratio for images to prevent layout shifts */
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-            max-height: 400px; /* Limit height to prevent layout shifts */
-            object-fit: cover; /* Keeps images from stretching */
-        }
-    </style>
 </head>
 
 <body>
@@ -59,7 +32,10 @@
             }
         }
 
+        // Get the button:
         let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
@@ -70,21 +46,25 @@
             }
         }
 
+        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         }
     </script>
 
     <header>
+        <!-- Top Navigation Menu -->
         <div class="topnav">
             <a href="index.html" class="active"><img src="../kuvat/RS3.png" alt="RS Logo"></a>
+            <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
                 <a href="aboutme.html">About me</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
                 <a href="index.html">Back home</a>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -99,34 +79,35 @@
         <hr>
 
         <div class="row"> 
-          <div class="column">
-                <img id="portrait1a" src="../kuvat/portrait1.jpeg" alt="portrait 1 description" width="300" height="300">
-                <img id="portrait2" src="../kuvat/portrait2.jpeg" alt="portrait 2 description" width="300" height="300">
-                <img id="portrait3" src="../kuvat/portrait3.jpeg" alt="portrait 3 description" width="300" height="300">
-                <img id="portrait4" src="../kuvat/portrait4.jpeg" alt="portrait 4 description" width="300" height="300">
-                <img id="portrait5" src="../kuvat/portrait5.jpeg" alt="portrait 5 description" width="300" height="300">
+          <div class="row"> 
+            <div class="column">
+                <img id="portrait1a" src="../kuvat/portrait1.jpeg" alt="portrait 1 description">
+                <img id="portrait2" src="../kuvat/portrait2.jpeg" alt="portrait 2 description">
+                <img id="portrait3" src="../kuvat/portrait3.jpeg" alt="portrait 3 description">
+                <img id="portrait4" src="../kuvat/portrait4.jpeg" alt="portrait 4 description">
+                <img id="portrait5" src="../kuvat/portrait5.jpeg" alt="portrait 5 description">
             </div>
             <div class="column">
-                <img id="portrait6" src="../kuvat/portrait6.jpeg" alt="portrait 6 description" width="300" height="300">
-                <img id="portrait7" src="../kuvat/portrait7.jpeg" alt="portrait 7 description" width="300" height="300">
-                <img id="portrait8" src="../kuvat/portrait8.jpeg" alt="portrait 8 description" width="300" height="300">
-                <img id="portrait9" src="../kuvat/portrait9.jpeg" alt="portrait 9 description" width="300" height="300">
-                <img id="portrait10" src="../kuvat/portrait10.jpeg" alt="portrait 10 description" width="300" height="300">
+                <img id="portrait6" src="../kuvat/portrait6.jpeg" alt="portrait 6 description">
+                <img id="portrait7" src="../kuvat/portrait7.jpeg" alt="portrait 7 description">
+                <img id="portrait8" src="../kuvat/portrait8.jpeg" alt="portrait 8 description">
+                <img id="portrait9" src="../kuvat/portrait9.jpeg" alt="portrait 9 description">
+                <img id="portrait10" src="../kuvat/portrait10.jpeg" alt="portrait 10 description">
             </div>  
-            <div class="column">
-                <img id="animal1" src="../kuvat/animal1.jpg" alt="Photo of a dog" width="300" height="300">
-                <img id="animal2" src="../kuvat/animal2.jpg" alt="Photo of a cat" width="300" height="300">
-                <img id="animal3" src="../kuvat/animal3.jpg" alt="Photo of a bird" width="300" height="300">
-                <img id="animal4" src="../kuvat/animal4.jpg" alt="Photo of a rabbit" width="300" height="300">
-                <img id="animal5" src="../kuvat/animal5.jpg" alt="Photo of a horse" width="300" height="300">
-            </div>
-            <div class="column">
-                <img id="animal6" src="../kuvat/animal6.jpg" alt="Photo of a lion" width="300" height="300">
-                <img id="animal5b" src="../kuvat/animal5.jpg" alt="Photo of a horse" width="300" height="300">
-                <img id="animal4b" src="../kuvat/animal4.jpg" alt="Photo of a rabbit" width="300" height="300">
-                <img id="animal3b" src="../kuvat/animal3.png" alt="Photo of a bird" width="300" height="300">
-            </div>
-        </div>
+          <div class="column">
+              <img id="animal1" src="../kuvat/animal1.jpg" alt="Photo of a dog">
+              <img id="animal2" src="../kuvat/animal2.jpg" alt="Photo of a cat">
+              <img id="animal3" src="../kuvat/animal3.jpg" alt="Photo of a bird">
+              <img id="animal4" src="../kuvat/animal4.jpg" alt="Photo of a rabbit">
+              <img id="animal5" src="../kuvat/animal5.jpg" alt="Photo of a horse">
+          </div>
+          <div class="column">
+              <img id="animal6"  src="../kuvat/animal6.jpg" alt="Photo of a lion">
+              <img id="animal5b" src="../kuvat/animal5.jpg" alt="Photo of a horse">
+              <img id="animal4b" src="../kuvat/animal4.jpg" alt="Photo of a rabbit">
+              <img id="animal3b" src="../kuvat/animal3.png" alt="Photo of a bird">
+          </div>
+      </div>
     </main>
 
     <footer>
