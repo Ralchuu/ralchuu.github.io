@@ -107,11 +107,11 @@ input[type=submit]:hover {
 }
 
 header {
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", cursive;
 }
 
 footer {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: large;
   background-color: #e7e7e7;
   text-align: center;
@@ -149,12 +149,12 @@ footer {
 
 h1 {
   text-align: center;
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", cursive;
 }
 
 h2 {
   text-align: center;
-  font-family: "Dancing Script";
+  font-family: "Dancing Script", cursive;
 }
 
 p {
@@ -212,6 +212,6 @@ p {
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(234, 237, 235);
 }
