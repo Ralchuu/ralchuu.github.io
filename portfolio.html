@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Description of the page content -->
     <meta name="description" content="Portrait photography portfolio">
     <meta name="keywords" content="portrait photography helsinki, pet photography helsinki, valokuvaaja helsinki, pet photography espoo, valokuvaus espoo, valokuvaaja espoo, omakuva espoo, omakuva helsinki, lemmikkikuvaus espoo, lemmikkikuvaus helsinki, portrait photography espoo">
     <meta name="author" content="Rauli Saresoja"> 
@@ -12,10 +11,7 @@
     <link rel="stylesheet" href="/css/tyylit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -25,46 +21,33 @@
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+            x.style.display = (x.style.display === "block") ? "none" : "block";
         }
 
-        // Get the button:
+        // Scroll-to-top button
         let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+            mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
         }
 
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 
     <header>
-        <!-- Top Navigation Menu -->
         <div class="topnav">
             <a href="index.html" class="active"><img src="../kuvat/RS3.png" alt="RS Logo"></a>
-            <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
                 <a href="aboutme.html">About me</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
                 <a href="index.html">Back home</a>
             </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -78,50 +61,46 @@
 
         <hr>
 
-        <div class="row"> 
-          <div class="row"> 
+        <div class="row">
             <div class="column">
-                <img id="portrait1a" src="../kuvat/portrait1.jpeg" alt="portrait of a woman looking up">
-                <img id="portrait2" src="../kuvat/portrait2.jpeg" alt="portrait of a long haired young man with a painting in background">
-                <img id="portrait3" src="../kuvat/portrait3.jpeg" alt="portrait of a black haired woman with a pink dress">
-                <img id="portrait4" src="../kuvat/portrait4.jpeg" alt="black and white portrait of a woman in a black dress taken from side">
-                <img id="portrait5" src="../kuvat/portrait5.jpeg" alt="portrait of a woman smelling a flower with orange background.">
+                <img id="portrait1a" src="../kuvat/portrait1.jpeg" alt="Portrait of a woman looking up">
+                <img id="portrait2" src="../kuvat/portrait2.jpeg" alt="Portrait of a long-haired young man with a painting in the background">
+                <img id="portrait3" src="../kuvat/portrait3.jpeg" alt="Portrait of a black-haired woman in a pink dress">
+                <img id="portrait4" src="../kuvat/portrait4.jpeg" alt="Black and white portrait of a woman in a black dress taken from the side">
+                <img id="portrait5" src="../kuvat/portrait5.jpeg" alt="Portrait of a woman smelling a flower with an orange background">
             </div>
             <div class="column">
-                <img id="portrait6" src="../kuvat/portrait6.jpeg" alt="black and white picture of a man with a camera.">
-                <img id="portrait7" src="../kuvat/portrait7.jpeg" alt="asian man wearing a suit jacket and holding a rose.">
-                <img id="portrait8" src="../kuvat/portrait8.jpeg" alt="indoors portrait of a woman with lots of green plants.">
-                <img id="portrait9" src="../kuvat/portrait9.jpeg" alt="side portrait of a woman with pink background.">
-                <img id="portrait10" src="../kuvat/portrait10.jpeg" alt="portrait of a woman with brown dress.">
-            </div>  
-          <div class="column">
-              <img id="animal1" src="../kuvat/animal1.jpg" alt="Photo of a brown dog.">
-              <img id="animal2" src="../kuvat/animal2.jpg" alt="Photo of a black and white dog.">
-              <img id="animal3" src="../kuvat/animal3.jpg" alt="Photo of a gorilla.">
-              <img id="animal4" src="../kuvat/animal4.jpg" alt="Photo of a cat.">
-              <img id="animal5" src="../kuvat/animal5.jpg" alt="Photo of a lion.">
-          </div>
-          <div class="column">
-              <img id="animal6"  src="../kuvat/animal6.jpg" alt="Photo of a black and white dog.">
-              <img id="animal5b" src="../kuvat/animal5.jpg" alt="Photo of a lion.">
-              <img id="animal4b" src="../kuvat/animal4.jpg" alt="Photo of a cat.">
-              <img id="animal3b" src="../kuvat/animal3.png" alt="Photo of a gorilla.">
-          </div>
-      </div>
+                <img id="portrait6" src="../kuvat/portrait6.jpeg" alt="Black and white picture of a man with a camera">
+                <img id="portrait7" src="../kuvat/portrait7.jpeg" alt="Asian man wearing a suit jacket and holding a rose">
+                <img id="portrait8" src="../kuvat/portrait8.jpeg" alt="Indoors portrait of a woman with lots of green plants">
+                <img id="portrait9" src="../kuvat/portrait9.jpeg" alt="Side portrait of a woman with pink background">
+                <img id="portrait10" src="../kuvat/portrait10.jpeg" alt="Portrait of a woman in a brown dress">
+            </div>
+            <div class="column">
+                <img id="animal1" src="../kuvat/animal1.jpg" alt="Photo of a brown dog">
+                <img id="animal2" src="../kuvat/animal2.jpg" alt="Photo of a black and white dog">
+                <img id="animal3" src="../kuvat/animal3.jpg" alt="Photo of a gorilla">
+                <img id="animal4" src="../kuvat/animal4.jpg" alt="Photo of a cat">
+                <img id="animal5" src="../kuvat/animal5.jpg" alt="Photo of a lion">
+            </div>
+            <div class="column">
+                <img id="animal6" src="../kuvat/animal6.jpg" alt="Photo of a black and white dog">
+                <img id="animal5b" src="../kuvat/animal5.jpg" alt="Photo of a lion">
+                <img id="animal4b" src="../kuvat/animal4.jpg" alt="Photo of a cat">
+                <img id="animal3b" src="../kuvat/animal3.png" alt="Photo of a gorilla">
+            </div>
+        </div>
     </main>
 
     <footer>
         <hr>
-        <b>Contact:</b>
-        <br>
-        040 4666 XXX
-        <br>
-        rauli-business@gmail.com
-        <br>
-        <b>Social media:</b>
-        <br>
+        <b>Contact:</b><br>
+        040 4666 XXX<br>
+        rauli-business@gmail.com<br>
+        <b>Social media:</b><br>
         <a href="https://www.instagram.com" class="fa fa-instagram" aria-label="Instagram"></a>
         <a href="https://www.youtube.com" class="fa fa-youtube" aria-label="YouTube"></a>
     </footer>
 </body>
 </html>
+
